@@ -1,0 +1,402 @@
+Program.Sub.ScreenSU.Start
+Gui.SS_Form1..Create
+Gui.SS_Form1..Caption("JP Morgan Positive Pay")
+Gui.SS_Form1..Size(4135,2525)
+Gui.SS_Form1..Position(0,0)
+Gui.SS_Form1..AlwaysOnTop(False)
+Gui.SS_Form1..FontName("Arial")
+Gui.SS_Form1..FontSize(8)
+Gui.SS_Form1..ForeColor(0)
+Gui.SS_Form1..Backcolor(-2147483633)
+Gui.SS_Form1..ControlBox(True)
+Gui.SS_Form1..MaxButton(False)
+Gui.SS_Form1..MinButton(False)
+Gui.SS_Form1..MousePointer(0)
+Gui.SS_Form1..Moveable(True)
+Gui.SS_Form1..Sizeable(False)
+Gui.SS_Form1..ShowInTaskBar(True)
+Gui.SS_Form1..TitleBar(True)
+Gui.SS_Form1..Event(unload,SS_Form1_Unload)
+Gui.SS_Form1.lbl_dtpBeg.Create(label)
+Gui.SS_Form1.lbl_dtpBeg.Caption("Beginning Date")
+Gui.SS_Form1.lbl_dtpBeg.Visible(True)
+Gui.SS_Form1.lbl_dtpBeg.Size(1800,200)
+Gui.SS_Form1.lbl_dtpBeg.Zorder(1)
+Gui.SS_Form1.lbl_dtpBeg.Position(100,135)
+Gui.SS_Form1.lbl_dtpBeg.Enabled(True)
+Gui.SS_Form1.lbl_dtpBeg.Alignment(0)
+Gui.SS_Form1.lbl_dtpBeg.FontName("Arial")
+Gui.SS_Form1.lbl_dtpBeg.FontSize(8)
+Gui.SS_Form1.lbl_dtpBeg.Backcolor(-2147483633)
+Gui.SS_Form1.lbl_dtpBeg.BackStyle(0)
+Gui.SS_Form1.lbl_dtpBeg.Tooltip("")
+Gui.SS_Form1.lbl_dtpBeg.ControlGroup(0)
+Gui.SS_Form1.lbl_dtpBeg.DefaultValue("")
+Gui.SS_Form1.dtpBeg.Create(datepicker)
+Gui.SS_Form1.dtpBeg.Visible(True)
+Gui.SS_Form1.dtpBeg.Size(1800,345)
+Gui.SS_Form1.dtpBeg.Zorder(0)
+Gui.SS_Form1.dtpBeg.Position(100,335)
+Gui.SS_Form1.dtpBeg.Enabled(True)
+Gui.SS_Form1.dtpBeg.Checkbox(False)
+Gui.SS_Form1.dtpBeg.TabStop(True)
+Gui.SS_Form1.dtpBeg.TabIndex(1)
+Gui.SS_Form1.dtpBeg.Tooltip("")
+Gui.SS_Form1.dtpBeg.ControlGroup(0)
+Gui.SS_Form1.dtpBeg.DefaultValue("")
+Gui.SS_Form1.lbl_dtpEnd.Create(label)
+Gui.SS_Form1.lbl_dtpEnd.Caption("Ending Date")
+Gui.SS_Form1.lbl_dtpEnd.Visible(True)
+Gui.SS_Form1.lbl_dtpEnd.Size(1800,200)
+Gui.SS_Form1.lbl_dtpEnd.Zorder(1)
+Gui.SS_Form1.lbl_dtpEnd.Position(1985,135)
+Gui.SS_Form1.lbl_dtpEnd.Enabled(True)
+Gui.SS_Form1.lbl_dtpEnd.Alignment(0)
+Gui.SS_Form1.lbl_dtpEnd.FontName("Arial")
+Gui.SS_Form1.lbl_dtpEnd.FontSize(8)
+Gui.SS_Form1.lbl_dtpEnd.Backcolor(-2147483633)
+Gui.SS_Form1.lbl_dtpEnd.BackStyle(0)
+Gui.SS_Form1.lbl_dtpEnd.Tooltip("")
+Gui.SS_Form1.lbl_dtpEnd.ControlGroup(0)
+Gui.SS_Form1.lbl_dtpEnd.DefaultValue("")
+Gui.SS_Form1.dtpEnd.Create(datepicker)
+Gui.SS_Form1.dtpEnd.Visible(True)
+Gui.SS_Form1.dtpEnd.Size(1800,345)
+Gui.SS_Form1.dtpEnd.Zorder(0)
+Gui.SS_Form1.dtpEnd.Position(1985,335)
+Gui.SS_Form1.dtpEnd.Enabled(True)
+Gui.SS_Form1.dtpEnd.Checkbox(False)
+Gui.SS_Form1.dtpEnd.TabStop(True)
+Gui.SS_Form1.dtpEnd.TabIndex(2)
+Gui.SS_Form1.dtpEnd.Tooltip("")
+Gui.SS_Form1.dtpEnd.ControlGroup(0)
+Gui.SS_Form1.dtpEnd.DefaultValue("")
+Gui.SS_Form1.lbl_ddlPmntType.Create(label)
+Gui.SS_Form1.lbl_ddlPmntType.Caption("Payment Type")
+Gui.SS_Form1.lbl_ddlPmntType.Visible(True)
+Gui.SS_Form1.lbl_ddlPmntType.Size(1800,200)
+Gui.SS_Form1.lbl_ddlPmntType.Zorder(1)
+Gui.SS_Form1.lbl_ddlPmntType.Position(100,850)
+Gui.SS_Form1.lbl_ddlPmntType.Enabled(True)
+Gui.SS_Form1.lbl_ddlPmntType.Alignment(0)
+Gui.SS_Form1.lbl_ddlPmntType.FontName("Arial")
+Gui.SS_Form1.lbl_ddlPmntType.FontSize(8)
+Gui.SS_Form1.lbl_ddlPmntType.Backcolor(-2147483633)
+Gui.SS_Form1.lbl_ddlPmntType.BackStyle(0)
+Gui.SS_Form1.lbl_ddlPmntType.Tooltip("")
+Gui.SS_Form1.lbl_ddlPmntType.ControlGroup(0)
+Gui.SS_Form1.lbl_ddlPmntType.DefaultValue("")
+Gui.SS_Form1.ddlPmntType.Create(dropdownlist)
+Gui.SS_Form1.ddlPmntType.Visible(True)
+Gui.SS_Form1.ddlPmntType.Size(1800,330)
+Gui.SS_Form1.ddlPmntType.Zorder(0)
+Gui.SS_Form1.ddlPmntType.Position(100,1050)
+Gui.SS_Form1.ddlPmntType.Enabled(True)
+Gui.SS_Form1.ddlPmntType.FontName("Arial")
+Gui.SS_Form1.ddlPmntType.FontSize(8)
+Gui.SS_Form1.ddlPmntType.TabStop(True)
+Gui.SS_Form1.ddlPmntType.TabIndex(3)
+Gui.SS_Form1.ddlPmntType.Tooltip("")
+Gui.SS_Form1.ddlPmntType.ControlGroup(0)
+Gui.SS_Form1.ddlPmntType.DefaultValue("")
+Gui.SS_Form1.cmdOK.Create(button)
+Gui.SS_Form1.cmdOK.Caption("Ok")
+Gui.SS_Form1.cmdOK.Visible(True)
+Gui.SS_Form1.cmdOK.Size(1000,360)
+Gui.SS_Form1.cmdOK.Zorder(0)
+Gui.SS_Form1.cmdOK.Position(100,1550)
+Gui.SS_Form1.cmdOK.Enabled(True)
+Gui.SS_Form1.cmdOK.FontName("Arial")
+Gui.SS_Form1.cmdOK.FontSize(8)
+Gui.SS_Form1.cmdOK.TabStop(True)
+Gui.SS_Form1.cmdOK.TabIndex(4)
+Gui.SS_Form1.cmdOK.Tooltip("")
+Gui.SS_Form1.cmdOK.ControlGroup(0)
+Gui.SS_Form1.cmdOK.DefaultValue("")
+Gui.SS_Form1.cmdOK.Event(click,cmdOK_Click)
+gui.SS_Form1.lbl_dtpBeg.LabelStretch(True)
+gui.SS_Form1.lbl_dtpEnd.LabelStretch(True)
+gui.SS_Form1.lbl_ddlPmntType.LabelStretch(True)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+
+F.ODBC.Connection!Con.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+F.Intrinsic.Control.CallSub(Loaddropdown)
+Gui.SS_Form1..Show
+
+Program.Sub.Main.End
+
+Program.Sub.SS_Form1_Unload.Start
+
+F.ODBC.Connection!Con.Close
+F.Intrinsic.Control.End
+
+Program.Sub.SS_Form1_Unload.End
+
+Program.Sub.cmdOK_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdOK_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sBegDate.Declare(String)
+V.Local.sEndDate.Declare(String)
+V.Local.sAPText.Declare(String)
+V.Local.SPYText.Declare(String)
+V.Local.sFileText.Declare(String)
+
+Gui.SS_Form1.cmdOK.Enabled(false)
+
+' will need dates in this format, for both subs.  converting, once, now
+F.Intrinsic.String.Format(V.Screen.SS_Form1!dtpBeg.Value,"YYYYMMDD",V.Local.sBegDate)
+F.Intrinsic.String.Format(V.Screen.SS_Form1!dtpEnd.Value,"YYYYMMDD",V.Local.sEndDate)
+
+F.Intrinsic.Control.SelectCase(V.Screen.SS_Form1!ddlPmntType.Text)
+F.Intrinsic.Control.Case("AP")
+	F.Intrinsic.Control.CallSub(Ap_lines,"BEGDATE",V.Local.sBegDate,"ENDDATE",V.Local.sEndDate)
+	V.Local.sAPText.Set(V.Args.AP)
+
+F.Intrinsic.Control.Case("PAYROLL")
+	F.Intrinsic.Control.CallSub(Payroll_lines,"BEGDATE",V.Local.sBegDate,"ENDDATE",V.Local.sEndDate)
+	V.Local.sPYText.Set(V.Args.PY)
+
+F.Intrinsic.Control.Case("ALL CHECKS")
+	F.Intrinsic.Control.CallSub(Ap_lines,"BEGDATE",V.Local.sBegDate,"ENDDATE",V.Local.sEndDate)
+	V.Local.sAPText.Set(V.Args.AP)
+	F.Intrinsic.Control.CallSub(Payroll_lines,"BEGDATE",V.Local.sBegDate,"ENDDATE",V.Local.sEndDate)
+	V.Local.sPYText.Set(V.Args.PY)
+
+F.Intrinsic.Control.EndSelect
+
+F.Intrinsic.String.Build("{0}{1}",V.Local.sAPText,V.Local.sPYText,V.Local.sFileText)
+F.Intrinsic.Control.If(V.Local.sFileText.Trim,<>,"")
+	Gui.SS_Form1..Visible(false)
+	F.Intrinsic.Control.CallSub(Writefile,"FILETEXT",V.Local.sFileText)
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox("No records found for entered parameters.")
+	Gui.SS_Form1.cmdOK.Enabled(True)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.CallSub(Ss_form1_unload)
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdOK_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_GRE_Positive_Pay-TOB.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.Debug.SetLA(V.Local.sError)
+	F.Intrinsic.UI.Msgbox("An error occured during processing.  Please contact Global Shop for Assistance")
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.cmdOK_Click.End
+
+Program.Sub.loadDropdown.Start
+F.Intrinsic.Control.SetErrorHandler("loadDropdown_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+
+Gui.SS_Form1.ddlPmntType.AddItem("AP")
+Gui.SS_Form1.ddlPmntType.AddItem("PAYROLL")
+Gui.SS_Form1.ddlPmntType.AddItem("ALL CHECKS")
+Gui.SS_Form1.ddlPmntType.Text("AP")
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("loadDropdown_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_GRE_Positive_Pay-TOB.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.Debug.SetLA(V.Local.sError)
+	F.Intrinsic.UI.Msgbox("An error occured during processing.  Please contact Global Shop for Assistance")
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.loadDropdown.End
+
+Program.Sub.AP_Lines.Start
+F.Intrinsic.Control.SetErrorHandler("loadDropdown_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSel.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.iFor.Declare(Long)
+V.Local.sHold.Declare(String)
+V.Local.sAPText.Declare(String)
+V.Local.sRec.Declare(String)
+
+' look for all AP checks written within the entered date range
+F.Intrinsic.String.Build("select Ck_Or_Void, Acct_No, Ck_No, Amount, Ck_Date, '' as Hold, Vend_No, Payee from Checks_Log where Ck_Date between '{0}' and '{1}' order by Ck_No",V.Args.BEGDATE,V.Args.ENDDATE,V.Local.sSel)
+F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSel,V.Local.sRet)
+' if checks are found, get them into formatted lines
+F.Intrinsic.Control.If(V.Local.sRet.Trim,<>,"")
+	' if checks are found, write details to a positional line
+	F.Intrinsic.String.Split(V.Local.sRet,"#$#",V.Local.sRet)
+	F.Intrinsic.Control.For(V.Local.iFor,V.Local.sRet.LBound,V.Local.sRet.UBound,1)
+		F.Intrinsic.String.Split(V.Local.sRet(v.Local.iFor),"*!*",V.Local.sHold)
+		V.Local.sHold.RedimPreserve(0,7)
+
+		F.Intrinsic.Control.if(V.Local.sHold(0).Trim,=,"C")
+			V.Local.sHold(0).set("I")
+		F.Intrinsic.Control.EndIf
+		' CK_OR_VOID - will be the C or V read from the recordset
+		' ACCT_NO - right justified, 0 fill
+		F.Intrinsic.String.LPad(V.Local.sHold(1).Trim,"0",20,V.Local.sHold(1))
+		' CK_NO - right justify, zero fill
+		F.Intrinsic.String.LPad(V.Local.sHold(2).Trim,"0",18,V.Local.sHold(2))
+		' AMOUNT - right justify, zero fill, implied decimal, no "-" on negative numbers
+		F.Intrinsic.String.Replace(V.Local.sHold(3),"-","",V.Local.sHold(3))
+		F.Intrinsic.String.Replace(V.Local.sHold(3).Format*0.00,".","",V.Local.sHold(3))
+		'amount
+		F.Intrinsic.String.LPad(V.Local.shold(3),"0",18,V.Local.sHold(3))
+		' ISSUE DATE - yyyymmdd, should be read from the recordset in this format
+		' FILLER
+		V.Local.sHold(5).Set("                      ")
+'		F.Intrinsic.String.RPad(V.Local.sHold(6)," ",14,V.Local.sHold(6))
+		' PAYEE NAME - left justify,blank fill, should beformatted that way withthe positional string
+		F.Intrinsic.String.Build("SELECT NAME_VENDOR FROM V_VENDOR_MASTER WHERE VENDOR = '{0}'",V.Local.sHold(6),V.Local.sSel)
+		F.ODBC.Connection!Con.OpenLocalRecordsetRO("rst",V.Local.sSel)
+		
+		F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,<>,True)
+			V.Local.sHold(7).Set(V.ODBC.con!rst.FieldValTrim!NAME_VENDOR)
+		F.Intrinsic.Control.EndIf
+		
+		F.ODBC.con!rst.Close
+		' VENDOR NO - left justify,blank fill, should beformatted that way withthe positional string
+		V.Local.sHold(6).Set("")
+		
+		F.Intrinsic.String.Join(V.Local.sHold," ",V.Local.sRec)
+		F.Intrinsic.String.RPad(V.Local.sRec," ",144,V.Local.sRec)
+		F.Intrinsic.String.Build("{0}{1}{2}",V.Local.sAPText,V.Local.sRec,V.Ambient.NewLine,V.Local.sAPText)
+
+	F.Intrinsic.Control.Next(V.Local.iFor)
+F.Intrinsic.Control.EndIf
+
+' send line back to calling sub
+F.Intrinsic.Variable.AddRV("AP",V.Local.sAPText)
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("loadDropdown_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_GRE_Positive_Pay-TOB.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.Debug.SetLA(V.Local.sError)
+	F.Intrinsic.UI.Msgbox("An error occured during processing.  Please contact Global Shop for Assistance")
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.AP_Lines.End
+
+Program.Sub.PAYROLL_Lines.Start
+F.Intrinsic.Control.SetErrorHandler("PAYROLL_Lines_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSel.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.iFor.Declare(Long)
+V.Local.sHold.Declare(String)
+V.Local.sPYText.Declare(String)
+V.Local.sRec.Declare(String)
+
+' look for all Payroll checks written within the entered date range
+F.Intrinsic.String.Build("select Ck_Or_Void, Acct_No, Ck_No, Amount, Ck_Date, '' as Hold, Empl_No, Payee from Payroll_Checks where Ck_Date between '{0}' and '{1}' order by Ck_No",V.Args.BEGDATE,V.Args.ENDDATE,V.Local.sSel)
+F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSel,V.Local.sRet)
+' if checks are found, get them into formatted lines
+F.Intrinsic.Control.If(V.Local.sRet.Trim,<>,"")
+	' if checks are found, write details to a positional line
+	F.Intrinsic.String.Split(V.Local.sRet,"#$#",V.Local.sRet)
+	F.Intrinsic.Control.For(V.Local.iFor,V.Local.sRet.LBound,V.Local.sRet.UBound,1)
+		F.Intrinsic.String.Split(V.Local.sRet(v.Local.iFor),"*!*",V.Local.sHold)
+		V.Local.sHold.RedimPreserve(0,7)
+		' CK_OR_VOID - will be the C or V read from the recordset
+		' ACCT_NO - right justified, 0 fill
+		F.Intrinsic.String.LPad(V.Local.sHold(1).Trim,"0",20,V.Local.sHold(1))
+		' CK_NO - right justify, zero fill
+		F.Intrinsic.String.LPad(V.Local.sHold(2).Trim,"0",18,V.Local.sHold(2))
+		' AMOUNT - right justify, zero fill, implied decimal, no "-" on negative numbers
+		F.Intrinsic.String.Replace(V.Local.sHold(3),"-","",V.Local.sHold(3))
+		F.Intrinsic.String.Replace(V.Local.sHold(3).Format*0.00,".","",V.Local.sHold(3))
+		F.Intrinsic.String.LPad(V.Local.shold(3),"0",18,V.Local.sHold(3))
+		' ISSUE DATE - yyyymmdd, should be read from the recordset in this format
+		' FILLER
+		V.Local.sHold(5).Set("        ")
+		' EMPLOYEE NO - left justify,blank fill, should beformatted that way withthe positional string
+		F.Intrinsic.String.RPad(V.Local.sHold(6)," ",14,V.Local.sHold(6))
+		' PAYEE NAME- left justify,blank fill, should beformatted that way withthe positional string
+
+		F.Intrinsic.String.Join(V.Local.sHold," ",V.Local.sRec)
+		F.Intrinsic.String.RPad(V.Local.sRec," ",200,V.Local.sRec)
+		F.Intrinsic.String.Build("{0}{1}{2}",v.Local.sPYText,v.Local.sRec,v.Ambient.NewLine,v.Local.sPYText)
+
+	F.Intrinsic.Control.Next(V.Local.iFor)
+F.Intrinsic.Control.EndIf
+
+' send line back to calling sub
+F.Intrinsic.Variable.AddRV("PY",V.Local.sPYText)
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("PAYROLL_Lines_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_GRE_Positive_Pay-TOB.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.Debug.SetLA(V.Local.sError)
+	F.Intrinsic.UI.Msgbox("An error occured during processing.  Please contact Global Shop for Assistance")
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.PAYROLL_Lines.End
+
+Program.Sub.writeFile.Start
+F.Intrinsic.Control.SetErrorHandler("writeFile_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sRet.Declare(String)
+
+' open save file dialog, to know where to write and save file
+F.Intrinsic.UI.ShowSaveFileDialog("","",V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet.Trim,<>,"***CANCEL***")
+	F.Intrinsic.File.String2File(v.Local.sRet,v.Args.FILETEXT)
+F.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("writeFile_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_GRE_Positive_Pay-TOB.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.Debug.SetLA(V.Local.sError)
+	F.Intrinsic.UI.Msgbox("An error occured writing data to output file.  Please contact Global Shop for Assistance")
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.writeFile.End
+
+Program.Sub.Comments.Start
+${$0$}$GCG_JP_Mordgan_Positive_Pay-TOB$}$JCT$}$4/12/2015 10:20:54 AM
+${$3$}$0$}$$}$0$}$-1$}$$}$12:00:00 AM$}$For Tobul Accumulator, per quote 6415
+200 char fixed width positive pay file with layout: Record Type (1-1) Account Number (3-22) Check Number (24-41) Amount (43-60) Issue Date (62-69) Additional Data (80-94) Additional Data (95-144)
+
+Program.Sub.Comments.End
+Program.Sub.ScreenSS.Start
+SS_Form1{{CAPTION::JP Morgan Positive Pay
+SS_Form1.CTRL{{NAME::dtpBeg\\TYPE::6\\CAPTION::Beginning Date\\TABSTOP::1\\GROUP::1\\BROWSER::0\\SIZE::1
+SS_Form1.CTRL{{NAME::dtpEnd\\TYPE::6\\CAPTION::Ending Date\\TABSTOP::2\\GROUP::1\\BROWSER::0\\SIZE::1
+SS_Form1.CTRL{{NAME::ddlPmntType\\TYPE::4\\CAPTION::Payment Type\\TABSTOP::3\\GROUP::2\\BROWSER::0\\SIZE::1
+SS_Form1.CTRL{{NAME::cmdOK\\TYPE::5\\CAPTION::Ok\\TABSTOP::4\\GROUP::3\\BROWSER::0\\SIZE::1
+
+Program.Sub.ScreenSS.End
+
